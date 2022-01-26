@@ -1,0 +1,61 @@
+﻿@model MVCApp.Models.CustomerModel
+
+@{
+    ViewBag.Title = "LogIn";
+}
+
+<h2 style="font-weight:bold">Log In</h2>
+<br />
+<div id="login_div">
+    <h4>Logiraj se na svoj profil.</h4>
+    @using (Html.BeginForm())
+    {
+        <table style="font-size:20px;">
+
+            <tr>
+                <td style="padding:10px">
+                    @Html.LabelFor(model => model.Email)
+                </td>
+
+                <td style="padding:10px">
+                    @Html.EditorFor(model => model.Email)
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>@Html.ValidationMessageFor(model => model.Email)</td>
+            </tr>
+            <tr>
+                <td style="padding:10px">
+                    @Html.LabelFor(model => model.Password)
+                </td>
+                <td style="padding:10px">
+                    @Html.EditorFor(model => model.Password)
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="padding:10px">
+                    <input style="margin:10px" type="submit" name="name" value="Login" />
+
+                    <input style="margin:10px" type="reset" name="name" value="Clear" />
+
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>@Html.ValidationMessageFor(model => model.Password)</td>
+            </tr>
+        </table>
+    }
+
+</div>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

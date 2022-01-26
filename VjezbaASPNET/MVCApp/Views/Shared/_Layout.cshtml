@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - X-Hosting</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body style="font-family:'Century Gothic'">
+ 
+    <div class="navbar-inverse navbar-fixed-top text-center" style="background-color:black;height:50px;">
+
+        <div class="container">
+
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @*@Html.ActionLink("X-Hosting", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+
+
+
+            </div>
+            
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav" style="font-size:26px;font-weight:bold">
+                    <li>@Html.ActionLink("Početna", "Index", "Home")</li>
+                    <li>@Html.ActionLink("O Nama", "About", "Home")</li>
+                    <li>@Html.ActionLink("Kontakt", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Registruj se", "SignUp", "Home")</li>
+                    <li>@Html.ActionLink("Log In", "LogIn", "Home")</li>
+
+
+
+                </ul>
+                
+            </div>
+      
+
+        </div>
+        
+    </div>
+    <br />
+   
+    <div style="display:block;float:left;margin-right:10px;position:relative">
+        <a class="navbar-brand" href="#" style="margin-left:60px;">
+            <img src="~/Images/logo.png" alt="">
+        </a>
+    </div>
+    <div class="container body-content">
+      
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>@DateTime.Now.Year - Powered by X-Hosting </p>
+            <p>&copy; All Rights Reserved</p>
+
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

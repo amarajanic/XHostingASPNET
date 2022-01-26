@@ -1,0 +1,9 @@
+C:\Users\Pc\source\repos\VjezbaASPNET\MVCLibrary\bin\Debug\MVCLibrary.dll
+C:\Users\Pc\source\repos\VjezbaASPNET\MVCLibrary\bin\Debug\MVCLibrary.pdb
+C:\Users\Pc\source\repos\VjezbaASPNET\MVCLibrary\bin\Debug\Dapper.dll
+C:\Users\Pc\source\repos\VjezbaASPNET\MVCLibrary\bin\Debug\Dapper.xml
+C:\Users\Pc\source\repos\VjezbaASPNET\MVCLibrary\obj\Debug\MVCLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Pc\source\repos\VjezbaASPNET\MVCLibrary\obj\Debug\MVCLibrary.csproj.CopyComplete
+C:\Users\Pc\source\repos\VjezbaASPNET\MVCLibrary\obj\Debug\MVCLibrary.dll
+C:\Users\Pc\source\repos\VjezbaASPNET\MVCLibrary\obj\Debug\MVCLibrary.pdb
+C:\Users\Pc\source\repos\VjezbaASPNET\MVCLibrary\obj\Debug\MVCLibrary.csproj.AssemblyReference.cache
